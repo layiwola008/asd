@@ -1,0 +1,55 @@
+.service__title {
+    line-height: 35px;
+}
+.services__header {
+    margin: 50px 0;
+    color: #3A3A3A;
+    text-align: center;
+    font-size: 22px;
+}
+.services__header h2 {
+    margin-bottom: 15px;
+}
+.services__header p {
+    width: 55ch;
+    line-height: 30px;
+    text-align: center;
+}
+.service__article {
+    width: 50ch;
+    font-size: 15px;    
+    letter-spacing: 1.2px;
+    text-align: justify;
+    line-height: 32px;
+}
+.service__icon {
+    font-size: 20px;
+}
+.list__space {
+    margin-left: 20px;
+}
+
+
+/*IPAD PRO RESPONSIVENESS*/
+@media only screen and (max-width: 1110px) {
+    .service__article {
+        width: 52ch;
+        font-size: 23px;
+    }
+    .services__list li {
+        font-size: 21px;
+    }
+}
+/*Ipad Mini, Ipad, Ipad Air*/
+@media only screen and (max-width: 898px) {
+    .service__article {
+        width: 42ch;
+    }
+}
+/*Samsung Galaxy and others*/
+@media only screen and (max-width: 466px) {
+    .service__article {
+        width: 40ch;      
+        font-size: 23px;
+    }
+}

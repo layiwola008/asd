@@ -1,0 +1,172 @@
+/*About Us Start*/
+.about__content {
+  font-size: 18px;
+}
+.about__content h2 {
+  font-size: 40px;
+}
+.about__solutions {
+  background-color: #3a3a3a;
+  background-image: url("../public/images/renewable-energy-solutions-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  box-sizing: border-box;
+  border-radius: 15px;
+  padding: 40px 0;
+  margin: 60px 0;
+}
+.about__solutions h2 {
+  line-height: 65px;
+  color: #69CC40;
+  font-size: 60px;
+  font-weight: normal;
+}
+.solutions__header__desc {
+  color: #d8d8d8;
+}
+.solutions__container {
+  display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+}
+.solution {
+  display: flex;
+  width: 70%;
+  height: 100%;
+  padding: 30px;
+  background-color: #006363;
+  color: white;
+  margin: 20px 20px;
+  box-sizing: border-box;
+  border-radius: 15px;
+  position: relative;
+}
+.solution h3 {
+  color: #69CC40;
+}
+.solution hr {
+  position: absolute;
+  top: 0;
+  padding: 2px;
+  width: 89%;
+}
+.solution span {
+  font-size: 70px;
+  color: #fff;
+}
+.solution .desc {
+  margin-left: 20px;
+  line-height: 25px;
+}
+.solution .desc h3 {
+  margin-bottom: 10px;
+}
+
+.solution .desc button {
+  width: 33%;
+  margin-top: 20px;
+  background-color: #006363;
+  border: 1px solid #fff;
+  color: white;
+  font-size: 15px;
+}
+/*About Us End*/
+
+/*Mission Styles Start*/
+.mission__container {
+  align-items: center;
+  border-radius: 15px;
+  display: flex;
+  height: 120vh;
+  justify-content: space-around;
+  margin-top: -130px;
+}
+.mission__left {
+  width: 75%;
+  background-color: #599E35;
+  border-radius: 15px;
+  color: #ffffff;
+  padding: 20px 40px;
+  position: relative;
+  left: 10%;
+  top: 50px;
+  z-index: 5;
+  border-left: 5px solid #00BCB7;
+  border-bottom: 1px solid #00BCB7;
+}
+.mission__left div {
+  margin-bottom: 40px;
+  line-height: 25px;
+}
+.mission__left div h3 {
+  margin-bottom: 10px;
+}
+.mission__left div p {
+  letter-spacing: 1.2px;
+}
+.mission__right {
+  width: 100%;
+  position: relative;
+  align-self: center;
+}
+/*Mission Styles End*/
+
+/*IPAD PRO RESPONSIVENESS*/
+@media only screen and (max-width: 1110px) {
+  .solution {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    align-self: flex-start;
+  }
+  .solution .desc button {
+    width: 28%;
+  }
+  .mission__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+  }
+  .mission__left {
+    width: 85%;
+    position: relative;
+    left: 0;
+    top: 0;
+  }
+  .mission__right {
+    width: 85%;
+    border-radius: 15px;
+    text-align: center;
+    background-color: #599E35;
+  }
+}
+/*Ipad Mini, Ipad, Ipad Air*/
+@media only screen and (max-width: 898px) {
+  .solution {
+    width: 92%;
+  }
+  .solution .desc button {
+    width: 40%;
+  }
+  .mission__container {
+    margin: 120px 0;
+  }
+}
+/*Samsung Galaxy and others*/
+@media only screen and (max-width: 466px) {
+  .about__solutions {
+  }
+  .solution {
+    width: 90%;
+  }
+  .solution .desc button {
+    width: 43%;
+  }
+  .mission__container {
+    height: 150vh;
+  }
+}

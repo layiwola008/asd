@@ -1,0 +1,118 @@
+.contact__col__left {
+    flex: 1;
+    margin: 20px 20px;
+    background-color: #006363;
+    border-left: 5px solid #69CC40;
+    border-bottom: 2px solid #69CC40;
+    padding: 50px 30px;
+    border-radius: 15px;
+  }
+  .contact__col__left div {
+    margin-bottom: 40px;
+  }
+  .contact__col__left div h3 {
+    margin-bottom: 10px;
+    color: #69CC40;
+  }
+  .contact__col__left div p {
+    margin-bottom: 5px;
+    color: #fff;
+  }
+  .contact__col__left button {
+    display: flex;
+    align-items: center;
+    background-color: #D8D8D8;
+  }
+.contact__col__right {
+    flex: 2;
+    margin: 20px 0;
+    position: relative;
+  }
+  .contact__form div {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+  }
+  .contact__form div span {
+    width: 50%;
+    margin-bottom: 20px;
+  }
+  .contact__form div span input {
+    width: 90%;
+    margin-right: 40px;
+    margin-top: 5px;
+    padding: 8px;
+    border: 1px #006363 solid;
+    border-radius: 5px;
+  }
+  .contact__form div span input:focus {
+    outline: none;
+  }
+  .contact__form div span textarea {
+    width: 90%;
+    margin-right: 40px;
+    margin-top: 5px;
+    padding: 5px;
+    border: 1px #006363 solid;
+    border-radius: 5px;
+  }
+  .contact__form div span textarea:focus {
+    outline: none;
+  }
+  .contact__button {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    right: 20.5%;
+    background-color: #006363;
+    color: #fff;
+  }
+  .contact__icon {
+    margin-right: 5px;;
+  }
+.require__style {
+  color: red;
+}
+.optional__style {
+  color: gray;
+  font-size: 12px;
+}
+
+  /*IPAD PRO RESPONSIVENESS*/
+@media only screen and (max-width: 1110px) {
+  .contact__button {
+    bottom: -15px;
+    right: 28.5%;
+  }
+  .contact__form div span input {
+    padding: 20px 8px;
+  }
+  
+}
+/*Ipad Mini, Ipad, Ipad Air*/
+@media only screen and (max-width: 898px) {
+  .contact__form div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    margin-right: 40px;
+    font-size: 18px;
+  }
+  .contact__form div span input {
+    width: 600px;
+    font-size: 18px;
+  }
+  .contact__form div span textarea {
+    width: 600px;
+    font-size: 18px;
+  }
+}
+/*Samsung Galaxy and others*/
+@media only screen and (max-width: 466px) {
+  .contact__form div {
+    margin-right: 34px;
+  }
+}

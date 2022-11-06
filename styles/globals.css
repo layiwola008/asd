@@ -1,0 +1,179 @@
+html,
+body,
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+p {
+  letter-spacing: 1.2px;
+  font-size: 15px;
+  line-height: 25px;
+  text-align: justify;
+}
+h1 {
+  font-size: 35px;
+}
+h2 {
+  font-size: 40px;
+}
+h3 {
+  font-size: 22px;
+  line-height: 30px;
+}
+.article__content {
+  font-size: 15px;
+  line-height: 25px;
+  letter-spacing: 1.2px;
+  text-align: justify;
+}
+ul li {  
+  font-size: 15px;
+  letter-spacing: 1.2px;
+}
+::-webkit-scrollbar {
+  width: 0px;
+}
+button {
+  background-color: #00BCB7;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  padding: 10px 10px;
+  margin-right: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  transform: scale(1, 1);
+  transition: transform 0.5s ease;
+}
+button:hover {
+  transform: scale(1.03, 1.03);
+}
+
+/*Display Flex With Flex Wrap*/
+.row__wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+
+.page__wrapper {
+  padding: 0 100px;
+}
+
+.full__container {
+  width: 100%;
+  height: 130vh;
+  margin: 40px 0;
+  padding: 1px 100px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+/*Forms Of Energy Start*/
+.page__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin-top: 134px;
+}
+.page__header h1 {
+  position: absolute;
+  top: 40%;
+  color: #fff;
+  font-size: 40px;
+  background-color: #69CC40;
+  width: fit-content;
+  padding: 5px 15px;
+  text-align: center;
+  border-radius: 15px;
+}
+/*Creates display flex column
+And centers content
+*/
+.col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/*Creates a Row With Display Flex*/
+.row {
+  display: flex;
+  box-sizing: border-box;
+  margin: 60px 0;
+}
+.col__md {
+  flex: 1;
+  margin: 0 20px;
+  line-height: 25px;
+}
+.col__md h2 {
+  font-size: 25px;
+  margin: 20px 0 30px 0;
+  color: #69CC40;
+}
+/*Creates a Row With Display Flex End*/
+
+.image__style {
+  border-radius: 20px;
+}
+/*HOMEPAGE MEDIA QUERIES*/
+
+/*IPAD PRO RESPONSIVENESS*/
+@media only screen and (max-width: 1110px) {
+  .hide__mobile {
+    display: none;
+  }
+  .row {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .col__md {
+    flex: 1;
+    margin: 20px 20px;
+  }
+  .col__md p {
+    line-height: 30px;
+  }
+  .row__wrap {
+    display: flex;
+    flex-direction: column;
+  }
+  .page__header {
+    margin-top: 95px;
+  }
+  .page__wrapper {
+    padding: 0 30px;
+  }
+  .full__container {
+    height: 100%;
+    overflow-y: auto;
+  }
+}
+
+/*Samsung Galaxy and others*/
+@media only screen and (max-width: 466px) {
+  .layout {
+    width: 740px;
+  }
+  .page__wrapper {
+    padding: 0 40px;
+  }
+}
+
+/*
+Primary Colors: #00BCB7 and #69CC40
+Secondary Colors: #009991 | #006363 and #599E35 | #599E35
+Tertiary Colors: #004442 and #3A3A3A | #D8D8D8
+*/

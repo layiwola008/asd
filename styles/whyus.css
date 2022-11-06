@@ -1,0 +1,179 @@
+/*Why Us Start*/
+.whyus__container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 60px;
+}
+.whyus__header {
+  width: 100%;
+  box-sizing: border-box;
+}
+.header p {
+  color: #69cc40;
+  font-weight: 600;
+  font-size: 23px;
+  margin-bottom: 20px;
+}
+.header h1 {
+  color: #00bcb7;
+  max-width: 35ch;
+  margin-bottom: 20px;
+}
+.whyus__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.whyus__stats {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+  position: relative;
+  top: 30px;
+}
+.whyus__content {
+  position: relative;
+}
+.core__values__header {
+  color: #69cc40;
+  font-size: 30px;
+  max-width: 10ch;
+  line-height: 40px;
+  position: absolute;
+  top: 10px;
+}
+.whyus__stats p {
+  font-weight: 600;
+  text-align: left;
+  max-width: 17ch;
+  line-height: 25px;
+  margin-top: 2px;
+  color: #00bcb7;
+}
+.whyus__stats div {
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+}
+.values__icon {
+  color: #00bcb7;
+  margin-right: 10px;
+}
+.whyus__stats span {
+  color: #69cc40;
+  font-size: 40px;
+  font-weight: 600;
+}
+.whyus__img {  
+  width: 430px;
+  height: 430px;
+}
+.whyus__image {
+  border-radius: 30px;
+  flex: 2;
+}
+.whyus__about {
+  flex: 2;
+  padding-left: 50px;
+  position: relative;
+  top: -20px;
+}
+.whyus__about p {
+  line-height: 25px;
+}
+.whyus__about button {
+  color: white;
+  width: 35%;
+  margin-top: 20px;
+}
+/*Why Us End*/
+
+/*IPAD PRO RESPONSIVENESS*/
+@media only screen and (max-width: 1110px) {
+  .whyus__row {
+    justify-content: space-evenly;
+    font-size: 19px;
+  }
+  .whyus__img {
+    margin-bottom: 20px;
+  }
+  .whyus__stats {
+    margin-right: 20px;
+  }
+  .whyus__stats span {
+    font-size: 30px;
+  }
+  .whyus__stats p {
+    font-weight: normal;
+    width: 15ch;
+  }
+  .whyus__about span {
+    display: none;
+  }
+  .whyus__about p {
+    width: 30ch;
+  }
+  .whyus__about button {
+    width: 50%;
+  }
+}
+/*Ipad Mini, Ipad, Ipad Air*/
+@media only screen and (max-width: 898px) {
+  .whyus__row {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .whyus__stats {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: flex-start;
+  }
+  .whyus__stats div {
+    width: 40%;
+    margin-right: 65px;
+
+  }
+  .whyus__img {
+    width: 100%;
+    height: 500px;
+    margin: auto;
+  }
+  .whyus__stats p {
+    max-width: 40ch;
+    font-size: 19px;
+  }
+  .whyus__about {
+    width: 100%;
+    padding-left: 0;
+    top: 0;
+  }
+  .whyus__about p {
+    margin-top: 20px;
+    font-size: 19px;
+    width: 55ch;
+  }
+  .whyus__about button {
+    width: 20%;
+  }
+  .whyus__stats {
+    top: 100px;
+    margin: 30px 0 150px;
+  }
+}
+
+ /*Samsung Galaxy and others*/
+ @media only screen and (max-width: 466px) {
+   .whyus__about {
+     padding-left: 0;
+     width: 100%;
+    }
+    .whyus__about p {
+      width: 50ch;
+    }
+    
+}

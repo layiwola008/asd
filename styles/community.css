@@ -1,0 +1,98 @@
+/*Community Start*/
+.community__container {
+  background-image: url("../public/images/solar-for-community.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  opacity: 0.11;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+.commparent {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+.community__content {
+  position: absolute; 
+}
+.community__content article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.community__content article h2 {
+  color: #00bcb7;
+  font-weight: 600;
+  margin-bottom: 50px;
+}
+.community__content article h2 span {
+  color: #69cc40;
+  font-weight: 300;
+}
+.content {
+  width: 100%;
+  margin-top: -50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #3a3a3a;
+}
+.content .left {
+  width: 100%;
+  flex: 1;
+  margin-right: 50px;
+}
+.content .left h3 {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.content .left p {
+  font-size: 20px;
+  font-weight: 500;
+}
+.content .right {
+  flex: 1;
+  margin-left: 50px;
+  padding-top: 110px;
+  font-weight: 400;
+  line-height: 25px;
+  font-size: 18px;
+}
+/*Community End*/
+
+/*IPAD PRO RESPONSIVENESS*/
+@media only screen and (max-width: 1110px) {
+  .community__container {
+    height: 50vh;
+  }
+}
+/*Ipad Mini, Ipad, Ipad Air*/
+@media only screen and (max-width: 898px) {
+  .community__container {
+    height: 100vh;
+  }
+  .community__content article h3 {
+    font-size: 40px;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+    align-items: flex-start;
+  }
+  .content .right {
+    flex: 1;
+    margin-left: 0;
+    padding-top: 40px;
+  }
+}
+/*Samsung Galaxy and others*/
+@media only screen and (max-width: 466px) {
+}

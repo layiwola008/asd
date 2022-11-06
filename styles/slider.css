@@ -1,0 +1,125 @@
+/*Swiper Slider Start*/
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.slider__container {
+  position: relative;
+  z-index: 1;
+  margin-top: 134px;
+}
+.slider__desc {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  left: 100px;
+  text-align: left;
+  color: white;
+  z-index: 4;
+}
+.slider__desc h2 {
+  font-size: 50px;
+  max-width: 20ch;
+  line-height: 60px;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+hr {
+  width: 35%;
+  height: 2px;
+  margin-bottom: 15px;
+  text-align: left;
+  border: none;
+  background-color: #009991;
+}
+.slider__desc p {
+  font-size: 20px;
+  max-width: 50ch;
+  color: white;
+  margin-bottom: 20px;
+  text-align: left;
+}
+.slider__buttons {
+  display: flex;
+}
+.slider__desc button:first-child {
+  text-align: center;
+  background-color: #69CC40;
+  width: 25%;
+  font-size: 15px;
+}
+.slider__btn__icon {
+  position: relative;
+  top: 2px;
+  margin-right: 8px;
+}
+.slider__desc button:first-child:hover {
+  background-color: #3a3a3a;
+}
+.slider__desc button:last-child {
+  background-color: #00BCB7;
+  color: #fff;
+  cursor: pointer;
+  width: 22%;
+  font-size: 15px;
+  text-align: center;
+}
+.slider__desc button:last-child:hover {
+  background-color: #00bcb7;
+  color: white;
+}
+/*Swiper Slider End*/
+
+/*Ipad Mini, Ipad, Ipad Air*/
+@media only screen and (max-width: 898px) {
+  .slider__container {
+    margin-top: 98px;
+  }
+  .slider__desc {
+    left: 40px;
+  }
+}
+/*Samsung Galaxy and others*/
+@media only screen and (max-width: 466px) {
+  .slider__desc h2 {
+    font-size: 30px;
+    margin-bottom: 2px;
+  }
+  .slider__desc p {
+    font-size: 20px;
+  }
+  .slider__desc button:first-child {
+    width: 30%;
+  }
+  .slider__desc button:last-child {
+    width: 30%;
+  }
+}

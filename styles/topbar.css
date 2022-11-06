@@ -1,0 +1,66 @@
+/*Tob Bar Style Start*/
+.topbar__container {
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 10px 40px 5px;
+  justify-content: space-between;
+  border-bottom: 0.5px #d8d8d8 solid;
+  position: fixed;
+  top: 0;
+  z-index: 99;
+  background-color: #f3f3f3;
+}
+.topbar__left {
+  display: flex;
+  color: #3a3a3a;
+}
+.topbar__item {
+  display: flex;
+  align-items: center;
+  padding-right: 30px;
+}
+.tobbar__icon {
+  margin: 5px 6px 0 0;
+}
+
+.topbar__right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.topbar__links {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-right: 40px;
+} 
+.topbar__links span {
+  margin: 0 10px;
+  cursor: pointer;
+}
+.social__icon {
+  margin-right: 5px;
+  font-size: 20px;
+  border-radius: 50%;
+}
+.social__icon:hover {
+  color: #69cc40;
+  cursor: pointer;
+}
+/*Tob Bar Style End*/
+
+/*IPAD PRO RESPONSIVENESS*/
+@media only screen and (max-width: 1110px) {
+  .topbar__left {
+    font-size: 20px;
+  }
+}
+
+/*Ipad Mini, Ipad, Ipad Air*/
+@media only screen and (max-width: 898px) {
+  .topbar__container {
+    display: none;
+  }
+}

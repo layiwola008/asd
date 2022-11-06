@@ -1,0 +1,160 @@
+/*Forms Of Renewable Energy Start*/
+.energy__forms__container {
+  height: 100%;
+  margin: 60px 0;
+  box-sizing: border-box;
+}
+.energy__forms__container .header {
+  display: flex;
+  margin-bottom: 40px;
+  box-sizing: border-box;
+}
+.energy__forms__container .header .left {
+  flex: 1;
+}
+.energy__forms__container .header .left h2 {
+  font-size: 40px;
+  width: 17ch;
+  padding-bottom: 40px;
+  color: #00bcb7;
+}
+.energy__forms__container .header .right {
+  flex: 1;
+}
+.energy__forms__container .header .right p {
+  padding-bottom: 20px;
+  font-weight: normal;
+  color: #3A3A3A;
+  font-size: 17px;
+}
+.energy__forms__container .header .right button {
+  color: white;
+}
+.energy__forms__container .cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  box-sizing: border-box;
+}
+.energy__forms__container .card {
+  height: 100%;
+  width: 100%;
+  margin: 0 20px;
+  border: 1px solid #00BCB7;
+  border-radius: 15px;
+  transform: scale(1, 1);
+  transition: all 0.4s ease-in-out;
+  box-sizing: border-box;
+}
+.energy__forms__container .card:hover {
+  transform: scale(1.1, 1.1);
+  background-color: #69cc40;
+}
+.card span {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.card .details {
+  padding: 20px;
+  color: #3a3a3a;
+  transition: color 0.4s ease-in-out;
+  line-height: 25px;
+}
+.card .details:hover {
+  color: white;
+}
+.card .details h3 {
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+.card button {
+  margin: 20px 0;
+  width: 43%;
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+}
+.read_more_icon {
+  margin: 5px 5px 0 0;
+}
+.post__page__container {
+  background-color: #3a3a3a;
+  box-sizing: border-box;
+  border-radius: 15px;
+  padding: 40px 0;
+  margin: 180px  0 70px 0;
+}
+.post__image__container {
+  margin-top: 40px;
+}
+.energy__post__button {
+  background-color: #3A3A3A;
+  border: 1px solid white;
+  color: white;
+  margin-top: 40px;
+}
+/*Forms Of Renewable Energy End*/
+
+
+/*IPAD PRO RESPONSIVENESS*/
+@media only screen and (max-width: 1110px) {
+  .energy__forms__container {
+    font-size: 30px;
+  }
+  .energy__forms__container .header {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+  }
+  .energy__forms__container .header .right p {
+    line-height: 35px;
+  }
+  .energy__forms__container .header .right button {
+    width: 30%;
+    font-size: 25px;
+  }
+  .energy__forms__container .cards {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+  .energy__forms__container .card {
+    margin: 0 0 40px;
+    width: 61%;
+    align-self: flex-start;
+    font-size: 25px;
+  }
+  .card .details p {
+    line-height: 35px;
+  }
+  .card button {
+    width: 30%;
+    font-size: 20px;
+  }
+}
+/*Ipad Mini, Ipad, Ipad Air*/
+@media only screen and (max-width: 898px) {
+  .energy__forms__container .header .left h2 {
+    font-size: 60px;
+  }
+  .energy__forms__container .header .right button {
+    width: 40%;
+  }
+  .energy__forms__container .card {
+    width: 84.5%;
+  }
+}
+/*Samsung Galaxy and others*/
+@media only screen and (max-width: 466px) {
+  .energy__forms__container .header {
+    margin-bottom: 50px;
+  }
+  .energy__forms__container .card {
+    width: 91%;
+    margin: auto;
+    margin-bottom: 40px;
+  }
+  .card button {
+    width: 30%;
+  }
+}

@@ -1,0 +1,113 @@
+.faq__main__comtainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.faq__container {
+    width: 90%;
+    margin: auto;
+}
+.active__title {
+    display: block;
+    font-size: 21px;
+    transition: all 0.5s ease;
+}
+.active__content {
+    display: block;
+}
+.inactive {
+    display: none;
+}
+.faq__header__title {
+    align-self: flex-start;
+    text-align: center;
+    margin: 30px 0;
+    margin-left: 0;
+    color: #00BCB7;
+    
+}
+.container {
+    width: 100%;
+    margin: auto;
+    text-align: left;
+}
+.faq__item {
+    padding: 20px;
+    width: 100%;
+    transition: all 0.5s ease;
+}
+.faq__item__active {
+    border: 2px solid #006363;
+    border-radius: 15px;
+    transition: all 0.5s ease;
+}
+.faq__heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 15px;
+    border: 1px solid #D8D8D8;
+    border-radius: 15px;
+    width: 100%;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    font-size: 20px;
+}
+.faq__heading__active {
+    background-color: #006363;
+    color: #D8D8D8;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 15px;
+    border-radius: 15px;
+    width: 100%;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+.faq__title {
+    font-size: 20px;
+}
+.faq__body {
+    width: 100%;
+}
+.faq__body p {
+    width: 65ch;
+    margin: 20px 15px;
+}
+.other__questions {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 85%;
+}
+.other__questions p {
+margin-left: 30px;
+}
+.other__questions button {
+    background-color: #00BCB7;
+    color: white;
+    width: 25%
+}
+
+
+/*IPAD PRO RESPONSIVENESS*/
+@media only screen and (max-width: 1110px) {
+  
+}
+/*Ipad Mini, Ipad, Ipad Air*/
+@media only screen and (max-width: 898px) {
+    .faq__body p {
+        width: 57ch;
+        margin: 20px 15px;
+    }
+}
+/*Samsung Galaxy and others*/
+@media only screen and (max-width: 466px) {
+    .faq__body p {
+        width: 52ch;
+        margin: 20px 15px;
+    }
+}

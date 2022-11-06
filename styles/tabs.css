@@ -1,0 +1,223 @@
+.box {
+    border: 2px solid gray;
+    width: 76%;
+    margin: auto;
+    margin-top: 50px;
+    border: none;
+}
+.tabs {
+    display: flex;
+    justify-content: space-between;
+}
+.tab {
+    background: #3A3A3A;
+    flex: 1;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    padding: 2px 10px;
+    text-align: left;
+    border: 1px solid #D8D8D8;
+    color: #D8D8D8;
+    cursor: pointer;
+    position: relative;
+}
+
+
+.active-tab {
+    background: #69CC40;
+    color: #fff;
+    font-weight: 600;
+}
+
+
+.active-tab::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 13px;
+    right: 10px;
+    bottom: 0;
+    width: 80%;
+    background: initial;
+    animation: new 0.5s;
+}
+@keyframes new {
+    from{
+        top: 50px;
+        left: 13px;
+        right: 10px;
+        background: #006363;
+    }
+    to{
+        top: 0px;
+        left: 13px;
+        right: 10px;
+    }
+}
+
+.tab__contents {
+    position: relative;
+    height: 130vh;
+    padding-top: 60px;
+}
+
+.tab__content {
+    display: none;
+    position: relative;
+}
+
+.active__tab__content {
+    display: block;
+    transition: all 1s ease-in-out;
+    animation: example 1s;
+}
+
+@keyframes example {
+    from{
+        margin-top: 500px;
+    }
+    to{
+        margin-top: 0;
+    }
+}
+.tab__contents button {
+    width: 18%;
+    background-color: #69CC40;
+    color: #fff;
+    position: absolute;
+    right: 35px;
+    top: 20px;
+}
+.service__article {
+    line-height: 30px;
+}
+
+/*Special styles for the vertical Tabs*/
+.box__vertical {
+    border: 2px solid gray;
+    width: 65%;
+    margin: auto;
+    border-radius: 15px;
+    border: none;
+}
+.tabs__vertical {
+    padding-top: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.tab__vertical {
+    width: 100%;
+    background: #D8D8D8;
+    flex: 1;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    padding: 3px 0 0 15px;
+    margin-bottom: 4px;
+    border-radius: 5px;
+    text-align: left;
+    border: 1px solid #D8D8D8;
+    color: #004442;
+    cursor: pointer;
+    position: relative;
+}
+.tab__contents__vertical {
+    width: 60%;
+    position: relative;
+    height: 40vh;
+    padding-top: 60px;
+    border-radius: 15px;
+    text-align: center;
+    padding: 40px 20px;
+}
+.active-tab-vertical {
+    background: #006363;
+    color: #D8D8D8;
+    font-weight: 600;
+}
+.icon__veritical {
+    font-size: 25px;
+    margin-right: 10px;
+    position: relative;
+    top: 1px;
+  }
+.product{
+    background-color: #006363;
+}
+
+
+/*IPAD PRO RESPONSIVENESS*/
+@media only screen and (max-width: 1110px) {
+    .box {
+        width: 85%;
+    }
+    .tabs {
+        display: flex;
+        flex-direction: column;
+    }
+    .tab {
+        padding: 5px 20px;
+        font-size: 30px;
+    }
+     
+    .tab:first-of-type {
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        border-bottom-left-radius: 0px;
+    }
+    .tab:last-of-type {
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        border-top-right-radius: 0px;
+    }
+    .tab__contents button {
+        right: -25px;
+        top: 25px;
+    }
+    .box__vertical {
+        width: 80%;
+    }
+    .tabs__vertical {
+        width: 100%;
+    }
+    .tab__vertical {
+        padding: 10px 15px; 
+    }
+    .tab__contents__vertical {
+        margin-left: 21%;
+    }
+}
+/*Ipad Mini, Ipad, Ipad Air*/
+@media only screen and (max-width: 898px) {
+    .box {
+        width: 100%;
+    }
+    .tab__contents button {
+        width: 30%;
+        right: -95px;
+        top: 25px;
+    }
+    .active__tab__content {
+        margin-left: -60px;
+    }
+    .box__vertical {
+        margin-top: -100px;
+        width: 100%;
+    }
+    .tab__contents__vertical {
+        margin-left: 27%;
+    }
+}
+/*Samsung Galaxy and others*/
+@media only screen and (max-width: 466px) {
+    .box {
+        width: 100%;
+        border-radius: 15px;
+    }
+   
+    .tab__vertical {
+        padding: 14px 15px; 
+    } 
+}

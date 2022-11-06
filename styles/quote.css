@@ -1,0 +1,145 @@
+.quote__form__container {
+  width: 70%;
+  padding: 0;
+  margin-bottom: 40px;
+  box-sizing: border-box;
+}
+.quote__desc {
+  text-align: center;
+  margin: 40px 0;
+}
+.quote__desc h2 {
+  margin-bottom: 10px;
+}
+.quote__desc p {
+  width: 45ch;
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+.form div {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  font-size: 20px;
+}
+.form span {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+.form span input {
+  margin: -12px 20px 0 0;
+  width: 375px;
+  padding: 8px;
+  border: 1px #006363 solid;
+  border-radius: 5px;
+  border-radius: 5px;
+  font-size: 20px;
+}
+.form span input:focus {
+  outline: none;
+}
+.form span select {
+  margin: -12px 20px 0 0;
+  padding: 8px;
+  border: 1px #006363 solid;
+  border-radius: 5px;
+  width: 767px;
+  border-radius: 5px;
+  font-size: 20px;
+}
+.form span select:focus {
+  outline: none;
+}
+.form span textarea {
+  margin: -12px 20px 0 0;
+  padding: 10px;
+  width: 767px;
+  border: 1px #006363 solid;
+  border-radius: 5px;
+  font-size: 20px;
+}
+.form span textarea:focus {
+  outline: none;
+}
+.form span label {
+  margin: 0 0;
+}
+.quote__form__container .button {
+  width: 94.5%;
+  margin: -12px 0 0 15px;
+  background-color: #009991;
+  color: #d8d8d8;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  padding: 23px 15px;
+  margin-right: 35px;
+  font-size: 15px;
+  font-weight: bold;
+  transform: scale(1, 1);
+  transition: transform 0.5s ease;
+}
+.quote__form__container .button:hover {
+  transform: scale(1.01, 1.01);
+}
+
+/*IPAD PRO RESPONSIVENESS*/
+@media only screen and (max-width: 1110px) {
+  .form span input {
+    width: 350px;
+  }
+  .form span select {
+    width: 720px;
+  }
+  .form span textarea {
+    width: 720px;
+  }
+  .quote__form__container .button {
+    width: 98%;
+  }
+}
+/*Ipad Mini, Ipad, Ipad Air*/
+@media only screen and (max-width: 898px) {
+  .form span input {
+    width: 350px;
+  }
+  .form span select {
+    width: 720px;
+  }
+  .form span textarea {
+    width: 720px;
+  }
+}
+/*Samsung Galaxy and others*/
+@media only screen and (max-width: 466px) {
+  .form div {
+    font-size: 25px;
+  }
+  .form span input {
+    width: 480px;
+    font-size: 25px;
+  }
+  .form span select {
+    width: 480px;
+    font-size: 25px;
+  }
+  .form span textarea {
+    width: 480px;
+    font-size: 25px;
+  }
+  .quote__form__container .button {
+    width: 96%;
+    font-size: 25px;
+  }
+}
